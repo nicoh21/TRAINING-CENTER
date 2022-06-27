@@ -1,0 +1,323 @@
+body {
+  background-color: #151515;
+  color: aqua;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px; }
+
+.menuContainer {
+  color: rgba(176, 176, 176, 0.814);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%; }
+  .menuContainer .logoIndex {
+    width: 110px;
+    height: 40px;
+    padding: 15px auto; }
+  .menuContainer ul {
+    display: flex;
+    align-items: center;
+    list-style: none; }
+    .menuContainer ul .animate__animated.animate__fadeInRight {
+      animation-duration: 2s; }
+    .menuContainer ul li {
+      font-size: medium;
+      align-items: center;
+      margin-left: 30px; }
+      .menuContainer ul li .bar {
+        color: rgba(176, 176, 176, 0.814);
+        text-decoration: none;
+        border-radius: 100px; }
+        .menuContainer ul li .bar:hover {
+          color: aqua;
+          font-size: 1.05rem;
+          transition: 0.5s; }
+      .menuContainer ul li .butLog {
+        display: inline-block;
+        background-color: rgba(128, 128, 128, 0.122);
+        color: rgba(176, 176, 176, 0.814);
+        padding: 10px 10px;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none; }
+        .menuContainer ul li .butLog:hover {
+          background-color: aqua; }
+
+.buttonn {
+  background-color: rgba(128, 128, 128, 0.308); }
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 15px auto; }
+
+.img-inicio {
+  background-image: url(../img/imgproyect.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem; }
+  .img-inicio .frase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 21rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center; }
+    .img-inicio .frase h1 {
+      font-size: 3.5rem;
+      font-weight: bolder; }
+
+.activities {
+  display: flex;
+  justify-content: center; }
+  .activities .cfc {
+    border: 5px; }
+    .activities .cfc:hover {
+      background-color: rgba(128, 128, 128, 0.308); }
+    .activities .cfc a {
+      text-decoration: none;
+      color: aqua; }
+  .activities .cfc1:hover {
+    background-image: url(../img/funcional-img.jpeg);
+    background-size: 20rem; }
+  .activities .cfc2:hover {
+    background-image: url(../img/crossfit-img.jpeg);
+    background-size: 20rem; }
+  .activities .cfc3:hover {
+    background-image: url(../img/calistenics-img.jpeg);
+    background-size: 20rem; }
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+  margin: 3rem 10%;
+  border: solid 2px rgba(176, 176, 176, 0.814);
+  border-radius: 2rem;
+  background-image: url(../img/about-img.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .aboutUsContainer .aboutUsTitle {
+    text-align: center; }
+    .aboutUsContainer .aboutUsTitle h3 {
+      font-size: 3rem;
+      font-weight: bold; }
+  .aboutUsContainer .aboutUsText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 0 25%;
+    padding-top: 5rem; }
+
+@media screen and (max-width: 600px) {
+  .img-inicio {
+    height: 40rem; }
+    .img-inicio .frase {
+      padding-top: 15rem; } }
+
+@media screen and (max-width: 400px) {
+  .img-inicio {
+    height: 35rem; }
+    .img-inicio .frase {
+      padding-top: 10rem; } }
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  background: #292b2c;
+  border-radius: 1rem; }
+  .footerContainer .social {
+    text-align: center; }
+    .footerContainer .social h3 {
+      font-size: 2rem; }
+  .footerContainer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none; }
+
+.icons_foot {
+  display: flex;
+  justify-content: space-evenly; }
+  .icons_foot a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgba(176, 176, 176, 0.814);
+    padding: 1rem 1rem;
+    border-radius: 1rem; }
+    .icons_foot a:hover {
+      background-color: rgba(128, 128, 128, 0.122);
+      color: aqua; }
+
+.act-section {
+  background-image: url(../img/act1.png);
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 6rem; }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer"; }
+  .gridContainer header {
+    grid-area: header; }
+  .gridContainer main {
+    grid-area: main;
+    padding-top: 7rem;
+    background-image: url(../img/about-img.png);
+    background-size: cover; }
+  .gridContainer footer {
+    grid-area: footer; }
+  .gridContainer .aboutSection {
+    padding-bottom: 1rem; }
+
+@media screen and (max-width: 768px) {
+  .aboutUsContainer {
+    margin: 3rem 2%; }
+    .aboutUsContainer .aboutUsText {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      margin: 0 8%;
+      padding-top: 5rem; } }
+
+.grid-contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header-contact" "section-contact" "footer"; }
+  .grid-contact-container .header {
+    grid-area: header-contact; }
+  .grid-contact-container .section-contact {
+    grid-area: section-contact; }
+  .grid-contact-container .footer {
+    grid-area: footer; }
+
+.contactContainer {
+  background-image: url(../img/contact-img.jpeg);
+  background-size: cover;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contactContainer .contactTitle {
+    text-align: center; }
+    .contactContainer .contactTitle h2 {
+      font-size: 3rem; }
+  .contactContainer .contactForm {
+    width: 400px;
+    text-align: center;
+    padding-bottom: 2rem; }
+    .contactContainer .contactForm .inputContact {
+      width: 100%;
+      padding: 10px 10px; }
+    .contactContainer .contactForm .buttonContact {
+      background-color: gray;
+      color: aqua;
+      padding: 10px 100px;
+      border: none;
+      border-radius: 5px;
+      font-size: large; }
+    .contactContainer .contactForm .buttonContact:hover {
+      background-color: rgba(128, 128, 128, 0.754); }
+
+@media screen and (max-width: 450px) {
+  .contactContainer .contactForm {
+    width: 250px; }
+    .contactContainer .contactForm .buttonContact {
+      padding: 10px 60px;
+      border: none; } }
+
+.logInContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12rem; }
+  .logInContainer .LogInTitle {
+    text-align: center; }
+    .logInContainer .LogInTitle h2 {
+      font-size: 3rem; }
+  .logInContainer .LogInForm {
+    width: 25rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    border-radius: 5px; }
+    .logInContainer .LogInForm .submitButton {
+      background-color: gray;
+      color: aqua;
+      padding: 10px 90px;
+      border: none;
+      border-radius: 5px;
+      font-size: large; }
+      .logInContainer .LogInForm .submitButton:hover {
+        background-color: rgba(128, 128, 128, 0.754); }
+    .logInContainer .LogInForm .inputLogin {
+      width: 80%;
+      margin-bottom: 15px;
+      padding: 10px 10px; }
+
+@media screen and (max-width: 400px) {
+  .logInContainer .LogInForm {
+    width: 18rem; }
+    .logInContainer .LogInForm .submitButton {
+      padding: 10px 70px; } }
+
+.grid-cafucr-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header-cafucr" "section-cafucr" "footer"; }
+  .grid-cafucr-container .header-cafucr {
+    grid-area: header-cafucr; }
+  .grid-cafucr-container .section-cafucr {
+    grid-area: section-cafucr; }
+  .grid-cafucr-container .footer {
+    grid-area: footer; }
+
+.calistenicsContainer, .funcionalContainer, .crossfitContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 9rem;
+  /* border: solid 5px gray; */
+  border-radius: 5px; }
+  .calistenicsContainer .calistenicsTitle, .calistenicsContainer .funcionalTitle, .calistenicsContainer .crossfitTitle, .funcionalContainer .calistenicsTitle, .funcionalContainer .funcionalTitle, .funcionalContainer .crossfitTitle, .crossfitContainer .calistenicsTitle, .crossfitContainer .funcionalTitle, .crossfitContainer .crossfitTitle {
+    padding: 20px; }
+    .calistenicsContainer .calistenicsTitle h2, .calistenicsContainer .funcionalTitle h2, .calistenicsContainer .crossfitTitle h2, .funcionalContainer .calistenicsTitle h2, .funcionalContainer .funcionalTitle h2, .funcionalContainer .crossfitTitle h2, .crossfitContainer .calistenicsTitle h2, .crossfitContainer .funcionalTitle h2, .crossfitContainer .crossfitTitle h2 {
+      font-size: 3rem; }
+  .calistenicsContainer .calistenicsText, .calistenicsContainer .funcionalText, .calistenicsContainer .crossfitText, .funcionalContainer .calistenicsText, .funcionalContainer .funcionalText, .funcionalContainer .crossfitText, .crossfitContainer .calistenicsText, .crossfitContainer .funcionalText, .crossfitContainer .crossfitText {
+    margin: 50px;
+    font-size: larger;
+    line-height: 2rem; }
+
+.calistenicsContainer {
+  background-image: url(../img/calistenics-img.jpeg);
+  background-size: cover;
+  padding-bottom: 7rem; }
+
+.crossfitContainer {
+  background-image: url(../img/crossfit-img.jpeg);
+  background-size: cover;
+  padding-bottom: 11rem; }
+
+.funcionalContainer {
+  background-image: url(../img/funcional-img.jpeg);
+  background-size: cover;
+  padding-bottom: 9rem; }

@@ -1,0 +1,110 @@
+
+.img-inicio{
+    background-image: url(../img/imgproyect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    .frase{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 21rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        h1{
+            font-size: 3.5rem;
+            font-weight: bolder;
+        }
+    }
+}
+
+
+.activities{
+    display: flex;
+    justify-content: center;
+
+    .cfc{
+        border: 5px;
+        &:hover{
+            background-color: $cfc;
+    
+        }
+        
+        a{
+            text-decoration: none;
+            color: $text;
+        }
+    
+    }
+    .cfc1{
+        &:hover{
+            background-image: url(../img/funcional-img.jpeg);
+            background-size: 20rem;
+        }
+    }
+    .cfc2{
+        &:hover{
+            background-image: url(../img/crossfit-img.jpeg);
+            background-size: 20rem;
+        }
+    }
+    .cfc3{
+        &:hover{
+            background-image: url(../img/calistenics-img.jpeg);
+            background-size: 20rem;
+        }
+    }
+}
+
+
+.aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    margin: 3rem 10%;
+    border: solid 2px $borders;
+    border-radius: 2rem;
+    background-image: url(../img/about-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .aboutUsTitle{
+        text-align: center;
+        h3{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+    .aboutUsText{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: 0 25%;
+        padding-top: 5rem;
+    
+    }
+}
+
+@media screen and (max-width:600px){
+    .img-inicio{
+        height: 40rem;
+        .frase{
+            padding-top: 15rem;
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .img-inicio{
+        height: 35rem;
+        .frase{
+            padding-top: 10rem;
+        }
+    }
+}

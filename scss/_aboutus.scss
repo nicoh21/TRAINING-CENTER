@@ -1,0 +1,50 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+        padding-top: 7rem;
+        background-image: url(../img/about-img.png);
+        background-size: cover;
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+    .aboutSection{
+        padding-bottom: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+        
+    .aboutUsContainer{    
+        margin: 3rem 2%;
+        
+        .aboutUsText{
+        
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            margin: 0 8%;
+            padding-top: 5rem;
+        
+        }
+    }
+}
+
+
+

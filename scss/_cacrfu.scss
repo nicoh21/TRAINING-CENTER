@@ -1,0 +1,73 @@
+.grid-cafucr-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header-cafucr"
+        "section-cafucr"
+        "footer"
+        ;
+
+        .header-cafucr{
+            grid-area: header-cafucr;
+        }
+ 
+        .section-cafucr{
+            grid-area: section-cafucr;
+        }
+ 
+        .footer{
+         grid-area: footer;
+         }
+}
+
+
+
+
+.calistenicsContainer, .funcionalContainer, .crossfitContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 9rem;
+    /* border: solid 5px gray; */
+    border-radius: 5px;
+
+    .calistenicsTitle, .funcionalTitle, .crossfitTitle{
+        padding: 20px;
+        h2{
+            font-size: 3rem;
+        }
+    
+    }
+    
+    .calistenicsText, .funcionalText, .crossfitText{
+        margin: 50px;
+        font-size: larger;
+        line-height: 2rem;
+    
+    }
+    
+}
+
+
+
+.calistenicsContainer{
+    background-image: url(../img/calistenics-img.jpeg);
+    background-size: cover;
+    padding-bottom: 7rem;
+}
+
+.crossfitContainer{
+    background-image: url(../img/crossfit-img.jpeg);
+    background-size: cover;
+    padding-bottom: 11rem;
+}
+
+.funcionalContainer{
+    background-image: url(../img/funcional-img.jpeg);
+    background-size: cover;
+    padding-bottom: 9rem;
+}

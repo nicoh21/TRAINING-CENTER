@@ -1,0 +1,60 @@
+
+
+.logInContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12rem;
+
+    .LogInTitle{
+        text-align: center;
+        h2{
+            font-size: 3rem;
+        }
+    }
+    
+    .LogInForm{
+        width: 25rem;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+        text-align: center;
+        border-radius: 5px;
+
+        .submitButton{
+            background-color: $submit;
+            color: $text;
+            padding: 10px 90px;
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+
+            &:hover{
+                background-color: $submithov;
+            }
+        }
+        
+        .inputLogin{
+            width: 80%;
+            margin-bottom: 15px;
+            padding: 10px 10px;
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .logInContainer{
+        .LogInForm{
+            width: 18rem;
+
+            .submitButton{
+                padding: 10px 70px;
+            }
+    
+        }
+        
+    }
+    
+}
+
+

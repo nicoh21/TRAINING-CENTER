@@ -1,0 +1,42 @@
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    background: $hf;
+    border-radius: 1rem;
+    .social{
+        text-align: center;
+        h3{
+            font-size: 2rem;
+        }
+        
+    }    
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        list-style: none;
+    }
+}
+
+.icons_foot{
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        font-size: 1.5rem;
+        text-decoration: none; 
+        color: $borders;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        &:hover{
+            background-color: $logbut;
+            color: $text;
+
+
+        }
+     }
+    
+}
